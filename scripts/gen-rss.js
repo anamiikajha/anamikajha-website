@@ -5,7 +5,7 @@ const matter = require('gray-matter')
 
 async function generate() {
   const feed = new RSS({
-    title: 'TheSGJ',
+    title: 'Anamika Jha',
     site_url: 'https://anamikajha.vercel.app/',
     feed_url: 'https://anamiikajha.vercel.app/feed.xml'
   })
@@ -17,7 +17,7 @@ async function generate() {
       if (name.startsWith('index.')) return
 
       const content = await fs.readFile(
-        path.join(__dirname, '..', 'pages', 'posts', 'projects', name)
+        path.join(__dirname, '..', 'pages', 'posts', name)
       )
       const frontmatter = matter(content)
 

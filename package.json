@@ -7,8 +7,8 @@
     "start": "next start"
   },
   "engines" : { 
-    "npm" : ">=8.0.0",
-    "node" : ">=18.17.0"
+    "npm" : "8.0.0",
+    "node" : "18.17.0"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
